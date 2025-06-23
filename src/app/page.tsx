@@ -212,8 +212,8 @@ export default function Home() {
             <h2 className="font-headline text-6xl md:text-8xl -skew-y-3">LET'S WORK</h2>
             <h2 className="font-headline text-6xl md:text-8xl -skew-y-3">TOGETHER</h2>
             <Button size="lg" variant="outline" className="rounded-full border-white hover:bg-white hover:text-black transition-colors px-10 py-7 uppercase tracking-widest font-code mt-12">Create</Button>
-            <div className="max-w-md mx-auto h-80 relative my-16">
-              <Image src="https://placehold.co/600x800.png" data-ai-hint="man silhouette red" layout="fill" objectFit="cover" alt="Contact person" />
+            <div className="max-w-lg mx-auto h-96 relative my-16">
+              <Image src="/lastlogo.png" alt="MYADLABS Logo" width={600} height={400} className="object-contain w-full h-full" />
             </div>
             <div className="font-code text-sm md:text-base uppercase tracking-widest space-y-4">
               <p><a href="mailto:hello@myadlabs.com" className="hover:text-primary">hello@myadlabs.com</a></p>

@@ -911,6 +911,9 @@ video {
 .h-svh {
   height: 100svh;
 }
+.h-96 {
+  height: 24rem;
+}
 .max-h-96 {
   max-height: 24rem;
 }
