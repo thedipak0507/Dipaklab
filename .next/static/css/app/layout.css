@@ -875,11 +875,11 @@ video {
 .h-8 {
   height: 2rem;
 }
-.h-80 {
-  height: 20rem;
-}
 .h-9 {
   height: 2.25rem;
+}
+.h-96 {
+  height: 24rem;
 }
 .h-\[120vh\] {
   height: 120vh;
@@ -910,9 +910,6 @@ video {
 }
 .h-svh {
   height: 100svh;
-}
-.h-96 {
-  height: 24rem;
 }
 .max-h-96 {
   max-height: 24rem;
@@ -1054,9 +1051,6 @@ video {
 }
 .max-w-lg {
   max-width: 32rem;
-}
-.max-w-md {
-  max-width: 28rem;
 }
 .flex-1 {
   flex: 1 1 0%;
