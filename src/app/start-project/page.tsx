@@ -9,6 +9,7 @@ import * as z from "zod";
 import { pricingPlans, addOns, type Plan, type AddOn } from "@/lib/constants";
 import { useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
+import dynamic from "next/dynamic";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -353,10 +354,16 @@ function ProjectForm() {
   );
 }
 
+// Dynamically import ProjectForm with SSR disabled to prevent searchParams invariant error
+const DynamicProjectForm = dynamic(() => Promise.resolve(ProjectForm), {
+  ssr: false,
+  loading: () => <div className="min-h-screen flex items-center justify-center">Loading...</div>
+});
+
 export default function StartProjectPage() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <ProjectForm />
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <DynamicProjectForm />
     </Suspense>
   )
 }
